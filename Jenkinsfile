@@ -5,5 +5,7 @@ node {
   stage ('executing shell script') {
     sh "sh mem.sh"
   }
-        
+  stage ('content in the ') {
+    sh "cat demo.html"
+  }        
 }
