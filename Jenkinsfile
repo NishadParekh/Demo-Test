@@ -7,5 +7,9 @@ node {
   }
   stage ('content in the ') {
     sh "cat demo.html"
-  }        
+  }  
+  stage ('install cypress') {
+    sh "npm install cypress --save-dev"
+    sh "npx open cypress"
+  }
 }
